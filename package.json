@@ -1,13 +1,16 @@
 {
-  "name": "tooSimple",
+  "name": "tooeasy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "DI",
+    "IOC"
+  ],
+  "author": "hooks28",
   "license": "ISC",
   "dependencies": {
     "reflect-metadata": "^0.1.13"

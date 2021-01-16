@@ -2,6 +2,26 @@
 
 > 为什么会有这个包，因为我也被极度耦合的代码折磨过，该源码十分简单，但是功能十分强大，如果你有新的想法也可以提一个 `Pr`
 
+`npm i tooeasy --save`
+## 先看看效果
+
+```javascript
+@Provider("a")
+class A {
+  @Injection()
+  b?:B
+}
+@Provider("b",[10])
+class B {
+  c: number
+  constructor(p:number) {
+    this.c = p
+  }
+}
+// 此时的A并没有依赖B实例，B的改变并不会影响A，对此我们可以实现更多
+console.log(reinitialize().obtain('a').b.c) // 10
+```
+
 ### 该包导出两个装饰器，一个方法
 
 - `reinitialize`
