@@ -12,6 +12,7 @@ push(){
     git add .
     read -p "your commit msg" msg
     git commit -m "$msg"
+    git push origin main
 }
 
 if [ $1 == 'taobao' ]; then
