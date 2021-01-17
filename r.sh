@@ -1,11 +1,11 @@
 #/bin/bash
 
 taobao(){
-    npm config set registry http://registry.cnpmjs.org
+   npm config set registry http://registry.npm.taobao.org
 }
 
 npm(){
-    npm config set registry http://registry.npm.taobao.org
+  npm config set registry http://registry.cnpmjs.org
 }
 
 push(){
